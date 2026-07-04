@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Climate Pro</title>
+
+<link rel="manifest" href="manifest.json">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌡️ Climate Pro</h1>
+
+<div class="buttons">
+<button onclick="setMode('indoor')">🏠 Intérieur</button>
+<button onclick="setMode('outdoor')">🌍 Extérieur</button>
+</div>
+
+<div class="cards">
+<div class="card">Température: <span id="temp">--</span>°C</div>
+<div class="card">Humidité: <span id="hum">--</span>%</div>
+<div class="card">Confort: <span id="comfort">--</span></div>
+</div>
+
+<canvas id="chart"></canvas>
+
+<h3>📊 Historique</h3>
+<ul id="history"></ul>
+
+<script src="app.js"></script>
+</body>
+</html>
